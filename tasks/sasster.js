@@ -2,7 +2,7 @@
  * grunt-sasster
  * 
  *
- * Copyright (c) 2015 Spencer Leopold <spencerl@easternstandard.com>
+ * Copyright (c) 2015 Spencer Leopold <spencer.leopold@gmail.com>
  * Licensed under the MIT license.
  */
 
