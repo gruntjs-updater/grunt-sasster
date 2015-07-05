@@ -13,7 +13,7 @@ var Sasster = require('sasster');
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('estrn_sass', 'Use estrn-sass with grunt.', function() {
+  grunt.registerMultiTask('sasster', 'Use sasster with grunt.', function() {
     var self = this;
     var _ = grunt.util._;
     var done = _.once(self.async());
