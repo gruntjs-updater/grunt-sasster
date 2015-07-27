@@ -24,7 +24,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "sasster": "^1.0.6"
+    "sasster": "^1.0.7"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
