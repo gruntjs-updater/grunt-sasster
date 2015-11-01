@@ -17,18 +17,15 @@ module.exports = function(grunt) {
     var self = this;
     var _ = grunt.util._;
     var done = _.once(self.async());
+    var options = this.options();
+    var logger = grunt.log;
+    logger.log = logger.writeln; // alias grunt's .write to .log
+    options.logger = logger;
+    options.writeToFile = true;
 
-    var options = this.options({
-      outputStyle: 'nested',
-      sourceMap: false,
-      watch: false
-    });
-
-    var e = Sasster(options);
-    e.start().then(function(src) {
-      if (!options.watch) {
-        done();
-      }
+    var s = Sasster(options);
+    s.start().then(function() {
+      done();
     });
   });
 
